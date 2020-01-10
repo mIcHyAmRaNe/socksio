@@ -6,6 +6,7 @@ cache: pip
 branches:
   only:
     - master
+    - automated-releases
 
 matrix:
   include:
@@ -16,7 +17,7 @@ matrix:
       env: NOX_SESSION=test-3.6
     - python: 3.7
       env: NOX_SESSION=test-3.7
-    - python: 3.8-dev
+    - python: 3.8
       env: NOX_SESSION=test-3.8
 
 install:
